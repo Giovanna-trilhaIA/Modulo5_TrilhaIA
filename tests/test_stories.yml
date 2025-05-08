@@ -1,0 +1,21 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: teste de diferencial
+  steps: 
+  - user: "Qual o diferencial do curso?"
+    intent: questionar_diferencial
+  - action: utter_questionar_diferencial
+ 
+- story: teste de certificado
+  steps:
+  - user: "Receberei certificado?"
+    intent: questionar_certificado
+  - action: utter_questionar_certificado
+ 
+- story: teste de duracao
+  steps:
+  - user: "Qual a duracao do curso?"
+    intent: questionar_duracao
+  - action: utter_questionar_duracao

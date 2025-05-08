@@ -1,0 +1,20 @@
+version: "3.1"
+
+stories:
+
+- story: Responder ao questionamento do diferencial
+  steps:
+  - intent: questionar_diferencial
+  - action: utter_questionar_diferencial
+
+- story: Retornar sobre certificado
+  steps:
+  - intent: questionar_certificado
+  - action: utter_questionar_certificado
+
+- story: Respostas às perguntas frequentes sobre duracao
+  steps:
+  - intent: questionar_duracao
+  - action: utter_questionar_duracao
+  
+

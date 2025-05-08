@@ -1,0 +1,49 @@
+version: "3.1"
+
+intents:
+  - questionar_diferencial
+  - questionar_certificado
+  - questionar_duracao
+
+entities:
+  - diferencial
+  - certificado
+  - duracao
+
+slots:
+    diferencial:
+      type: text
+      mappings:
+        - type: from_entity
+          entity: diferencial
+   
+    certificado:
+      type: text
+      mappings:
+        - type: from_entity
+          entity: certificado  
+          
+    duracao:
+      type: text
+      mappings:
+        - type: from_entity
+          entity: duracao
+          
+responses:
+  utter_questionar_diferencial:
+  - text: "Além de 100% gratuitas, as trilhas contam com conteúdos produzidos por instituições renomadas, aplicando metodologias ativas de aprendizagem e com apoio de mentores e monitores especializados. Além disso, o programa foi pensado para promover capacitações em áreas da tecnologia com base nas vagas existentes no mercado para você garantir sua empregabilidade"
+
+  utter_questionar_certificado:
+  - text: "Você receberá um badge a cada módulo concluído e, ao concluir todos os módulos da trilha, um certificado de conclusão correspondente a carga horária total."
+ 
+  utter_questionar_duracao:
+  - text: "Após a finalização da trilha, você terá acesso por mais um mês."
+
+actions:
+  - utter_questionar_diferencial
+  - utter_questionar_certificado
+  - utter_questionar_duracao
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

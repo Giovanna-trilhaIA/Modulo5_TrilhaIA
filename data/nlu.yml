@@ -1,0 +1,21 @@
+version: "3.1"
+
+nlu:
+- intent: questionar_diferencial
+  examples: |
+    - Qual o diferencial em relação às outras plataformas de ensino?
+    - Qual o diferencial do curso?
+    - Há diferencial no curso?
+
+- intent: questionar_certificado
+  examples: |
+    - As trilhas possuem certificado de conclusão?
+    - Tem certificado?
+    - Recebo certificado?
+
+- intent: questionar_duracao
+  examples: |
+    - Por quanto tempo terei acesso às aulas?
+    - Qual a duracao do curso?
+
+
